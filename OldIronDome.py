@@ -30,8 +30,6 @@ def home():
     print(request.args)
     global ServerKey
     print(ServerKey)
-    if request.args["key"] != ServerKey:
-        return "Piss off!"
     if request.args.get("key", "") != ServerKey:
        return "Piss off!"
     # mode = request.args["mode"]
